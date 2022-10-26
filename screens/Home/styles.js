@@ -9,6 +9,6 @@ export const styles = StyleSheet.create({
   },
   text: {
     color: 'red',
-    fontFamily: 'Inter_900Black'
+    fontFamily: 'Poppins-Black'
   }
 });
