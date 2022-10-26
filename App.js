@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './screens/Home';
+import DetailsScreen from './screens/Details';
+import AppLoading from 'expo-app-loading';
+
+import {
+  useFonts,
+  Inter_900Black,
+} from '@expo-google-fonts/inter';
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  let [fontsLoaded] = useFonts({
+    Inter_900Black,
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <NavigationContainer>
+        <Tab.Navigator screenOptions={{
+          headerShown: false
+        }}>
+          <Tab.Screen name="Home" component={HomeScreen} options={{title: 'Overview' }} />
+          <Tab.Screen name="Details" component={DetailsScreen} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    );
+  }
+}
