@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" fill="none" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icons / trash delete remove</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.9999994,31.666666 C9.9999994,33.4999985 11.4999994,34.9999979 13.3333325,34.9999979 L26.6666651,34.9999979 C28.4999994,34.9999979 29.9999994,33.4999985 29.9999994,31.666666 L29.9999994,11.666666 L9.9999994,11.666666 L9.9999994,31.666666 Z M31.6666648,6.66666627 L25.8333328,6.66666627 L24.1666652,4.9999997 L15.8333328,4.9999997 L14.1666658,6.66666627 L8.33333283,6.66666627 L8.33333283,9.9999997 L31.6666648,9.9999997 L31.6666648,6.66666627 Z" id="path-1"></path>
+    </defs>
+    <g id="icons-/-trash-delete-remove" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="trash-delete-remove" fill="#000000" xlink:href="#path-1"></use>
+    </g>
+</svg>
