@@ -7,7 +7,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
-    color: 'red',
+  camera: {
+    flex: 1,
+    width: '100%'
   }
 });
